@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = __dirname;
-const HOST = "127.0.0.1";
-const PORT = 3000;
+const HOST = "0.0.0.0";
+const PORT = Number(process.env.PORT) || 3000;
 const STORE = path.join(ROOT, "submissions.json");
 
 try {
